@@ -44,8 +44,7 @@ https://web.dev/what-are-pwas/  <br />
 https://web.dev/drive-business-success/  <br />
 https://www.simicart.com/blog/progressive-web-apps-examples/  <br />
 
-React was an easy choice because it was one of the supported framework on Netlify and most of the companies uses React framework. <br />
-Facebook, Uber, foodpanda, Instagram, reddit and so on.  <br />
+React was an easy choice because it was one of the supported framework on Netlify.
 
 ### Database 
 
@@ -78,9 +77,12 @@ With all the basic information listed, we will now proceed to the final product 
 #### https://www.mymringredient.com/
 This is a basic brand homepage where user can reach from different refferal points such as facebook, google cards and also google search. 
 
-The landing page is fully set up with google SEO as shown below and it is rich result enabled website, where you get card like information when display in google search. 
+The landing page is fully set up with google SEO and it is rich result enabled website, where you get card like information when display in google search. 
+
+![googleSearch](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/google%20%20search.JPG)
 
 Below is the guided recipe in action below: 
+![jsonld](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/richResults.JPG)
 
 Next, we have moved our member registration workflow to the app, by submitting the form react will call netlify serverless fucntion to add an entry to google excel file, which will later be added into the POS system.
 
@@ -89,6 +91,8 @@ By doing this we have completely remove the manual registering process by using 
 The site is also google analytic and facebook pixel enabled for better advertising segmentation in the future, so that business can spend their advertising budget to the right customer segments.
 
 images is also load with lazy functions to further optimize the website.
+
+![lighthouseScore](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/mymringredient_Score.JPG)
 
 #### https://store.mymringredient.com/ and admin panel 
 
@@ -104,7 +108,11 @@ This will further streamline the process as business user can look for the lates
 
 Admin panel also servers as a store item editor, where business users can perform CRUD operations on the production product store.
 
+![Structure](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/OnlineStoreStructure.png)
 
+### Scores
+
+![storelighthouseScore](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/store.JPG)
 
 https://wechatwiki.com/wechat-resources/wechat-mini-program-epic-tutorial-guide/
 https://www.xiaohongshu.com/
