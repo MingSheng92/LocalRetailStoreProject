@@ -1,4 +1,4 @@
-# Move to cloud 
+# Online Retail Store Project
 
 # Task Deskscription
 I was tasked to propose a all around digital solution to the business owner, where the main purpose of this project is to: <br />
@@ -32,7 +32,7 @@ But when we look further into mobile sections, we find almost even split in both
 In early 2020, when tallking to a freidn in China they mentioned that they have wechat mini program where you can have an app like program without downloading and managing it. After having some research, this is an almost perfect match with what we want to do and I began to search for an alternatives.
 
 ##### Why not just go with Wechat mini program? 
-According to this article[1] Wechat mini program is widely used in China, such as xhs[2], bilibili[3] and so on. But we have to think about our geographic location and our user base.Even though Wechat is already widely used in South East Asia, but it is popular within the chinese community but not so much for the others, and mini programs is not widely used in this region as compared to traditional websites and applications.
+According to this [article](https://wechatwiki.com/wechat-resources/wechat-mini-program-epic-tutorial-guide/) Wechat mini program is widely used in China, such as [xiaohongshu](https://www.xiaohongshu.com/), [bilibili](https://www.bilibili.com/) and so on. But we have to think about our geographic location and our user base.Even though Wechat is already widely used in South East Asia, but it is popular within the chinese community but not so much for the others, and mini programs is not widely used in this region as compared to traditional websites and applications.
 
 One other downside of using Wechat miniprogram is that we will need to be tied down to the Wechat ecosystems, moreover we would still need a seperate website to host our landing page online to improve footprint, which is similar to the native smart phone app situation that was mentioned earlier.
 
@@ -95,8 +95,6 @@ The site is also google analytic and facebook pixel enabled for better advertisi
 
 images is also load with lazy functions to further optimize the website.
 
-![lighthouseScore](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/mymringredient_Score.JPG)
-
 #### https://store.mymringredient.com/ and admin panel 
 
 Admin panel will be shown only in image form as there is security concerns, so it is best to leave it out of this documentation.
@@ -136,7 +134,7 @@ submitOrder when user place an order <br />
 
 Below is an example where user placed an order from the store application, and business user will see the order in the admin panel instantly. Then he could proceed with the order and contact the customer as before.
 
-## future work 
+### future work 
 We have successfullly implemented a proof of concept where we implement a set of products to drive business sales. In short, we have optimized the workflow, increase online footprint of retail brand, streamlined workflow by adding new funcstions to the application.
 
 As all the basic infrastructure has been laid down, there is a few that we could do in the future.
@@ -147,10 +145,17 @@ As all the basic infrastructure has been laid down, there is a few that we could
 2. A/B test, since Netlify has integrate CI/CD, we can branch from root repository and perform live user test on UI changes.
 3. Add online payment gateway, as the business progress business will need to add payment options to the application, we could add in serverless payment option such as [Stripe](https://stripe.com/en-my) or [Snipcart](https://snipcart.com/).
 
-### Scores
+### Lighthouse Scores
+#### Landing page Lighthouse score: 
+![lighthouseScore](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/mymringredient_Score.JPG)
 
+#### Store application Lighthouse score 
 ![storelighthouseScore](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/store.JPG)
 
-https://wechatwiki.com/wechat-resources/wechat-mini-program-epic-tutorial-guide/ <br />
-https://www.xiaohongshu.com/ <br />
-https://www.bilibili.com/ <br />
+### Webpagetest.org scores
+#### Landing page Lighthouse score: 
+https://www.webpagetest.org/result/210210_DiBY_42bb22002bdac21f8c9c75cda5495b48/
+
+#### Store application Lighthouse score 
+https://www.webpagetest.org/result/210210_Di05_150a509fe8d4d93cc4776196f16def66/
+
