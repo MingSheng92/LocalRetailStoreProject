@@ -11,10 +11,10 @@ I was tasked to propose a all around digital solution to the business owner, whe
 # Framework 
 
 ### Backend infrastructure 
-Why serverless and not the traditional server approach? 
+#### Why serverless and not the traditional server approach? 
 Sure, traditional method to run a server and host a website may be more straight forward, but if we calculate the total uptime of the backend server it is not sufficient for a smaller retail business to sustain itself, additional fees will occur once the budget expires. Hence we want something else that is billed only when it is used. This is where serverless platform like Netlify or Firebase comes into play.
 
-Why Netlify ? 
+##### Why Netlify ? 
 Netlify has built in CI/CD, meaning that build and deploy is automated with Netlify once you have authorized the repository. This ensures really fast build and deploy timing and we have sites updates in minutes. Though now Firebase supports github repository build and deploy hook to be set up through firebase CLI, but Netlify still has overall cleaner UI. 
 
 ### fontend framework 
@@ -32,24 +32,20 @@ But when we look further into mobile sections, we find almost even split in both
 
 In early 2020, when tallking to a freidn in China they mentioned that they have wechat mini program where you can have an app like program without downloading and managing it. After having some research, this is an almost perfect match with what we want to do and I began to search for an alternatives.
 
-#### Why not just go with Wechat mini program? 
-Sure, according to this article[1] Wechat mini program is widely used in China, such as xhs[2], bilibili[3] and so on. But we have to think about our geographic location and our user base.
+##### Why not just go with Wechat mini program? 
+According to this article[1] Wechat mini program is widely used in China, such as xhs[2], bilibili[3] and so on. But we have to think about our geographic location and our user base.Even though Wechat is already widely used in South East Asia, but it is popular within the chinese community but not so much for the others, and mini programs is not widely used in this region as compared to traditional websites and applications.
 
-Even though Wechat is already widely used in South East Asia, but it is popular within the chinese community but not so much for the others, and mini programs is not widely used in this region as compared to traditional websites and applications.
+One other downside of using Wechat miniprogram is that we will need to be tied down to the Wechat ecosystems, moreover we would still need a seperate website to host our landing page online to improve footprint, which is similar to the native smart phone app situation that was mentioned earlier.
 
-One other downside of using Wechat miniprogram is that we will need to be tied down to the Wechat ecosystems, moreover we would still need a seperate website to host our landing page online to improve footprint, which is similar to the app situation that was mentioned earlier.
+After some research I have found progressive web application, which is lying around for awhile now. It matches all our criterias where it can be hosted on the web and also allows user to download and to be used as an app. In addition, PWA supports offline browsing with caching.
 
-After some research I have found progressive web application, which is lying around for awhile now. 
+For more information on PWA you can refer to these sites below:  <br />
+https://web.dev/what-are-pwas/  <br />
+https://web.dev/drive-business-success/  <br />
+https://www.simicart.com/blog/progressive-web-apps-examples/  <br />
 
-It matches all our criterias where it can be hosted on the web and also allows user to download and to be used as an app. In addition, PWA supports offline browsing with caching.
-
-For more information on PWA you can refer to these sites below: 
-https://web.dev/what-are-pwas/
-https://web.dev/drive-business-success/
-https://www.simicart.com/blog/progressive-web-apps-examples/
-
-React was an easy choice because it was one of the supported framework on Netlify and most of the companies uses React framework.
-Facebook, Uber, foodpanda, Instagram, reddit and so on. 
+React was an easy choice because it was one of the supported framework on Netlify and most of the companies uses React framework. <br />
+Facebook, Uber, foodpanda, Instagram, reddit and so on.  <br />
 
 ### Database 
 
