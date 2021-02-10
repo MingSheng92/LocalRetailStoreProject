@@ -8,7 +8,7 @@ I was tasked to propose a all around digital solution to the business owner, whe
 3. Make an early preparation for e-commerce 
 4. low maintaining cost while having reliable uptime and services
 
-# framework 
+# Framework 
 
 ### Backend infrastructure 
 Why serverless and not the traditional server approach? 
@@ -51,13 +51,14 @@ https://www.simicart.com/blog/progressive-web-apps-examples/
 React was an easy choice because it was one of the supported framework on Netlify and most of the companies uses React framework.
 Facebook, Uber, foodpanda, Instagram, reddit and so on. 
 
-### database 
+### Database 
 
 Since we have now chosen serverless framework, we may not have the flexibility of using mysql in traditional server setup. So ended up using firestore for our backend storage purpose, while Netlify also has their own nosql solution (FaunaDb) but I find firestore is easier to work with.
 
 It offers 50k read operations and 10k write operations per day which is reasonable for starters.
 
 ### UI Libraries 
+
 
 
 ### Global state managing  
@@ -70,6 +71,42 @@ Both firebase and Netlify supports generous image storage options but the proble
 
 Google photos, with google photos we get to choose how to upload the image and with some workaround we can make it to work just as the same as CDNs, just losing some basic funtionalities such as image crops and dynamic size loadings.
 
+## 
+
+With all the basic information listed, we will now proceed to the final product proposed.
+
+3 diffierent web applications were proposed to the business users, whereas the 3 products are all PWA enabled products.
+
+### Landing page/Official webpage
+
+#### https://www.mymringredient.com/
+This is a basic brand homepage where user can reach from different refferal points such as facebook, google cards and also google search. 
+
+The landing page is fully set up with google SEO as shown below and it is rich result enabled website, where you get card like information when display in google search. 
+
+Below is the guided recipe in action below: 
+
+Next, we have moved our member registration workflow to the app, by submitting the form react will call netlify serverless fucntion to add an entry to google excel file, which will later be added into the POS system.
+
+By doing this we have completely remove the manual registering process by using whatsapp or written down format compared to before. This will also eliminate any possible human error when adding a new member entry. 
+
+The site is also google analytic and facebook pixel enabled for better advertising segmentation in the future, so that business can spend their advertising budget to the right customer segments.
+
+images is also load with lazy functions to further optimize the website.
+
+#### https://store.mymringredient.com/ and admin panel 
+
+Admin panel will be shown only in image form as there is security concerns, so it is best to leave it out of this documentation.
+
+Next up, is the store like page for the business user. The concept for this is for customer to check out the latest items from the store and place order for in store pick up or grab delivery to their doorsteps.
+
+The final product is shown as below, where user can download and use as an app.
+
+In before, business order will need to answer enquiries, accept orders all from whatsapp, which is not efficient where they will have to find all products for the customer before they can place an order. With a marketplace like app, customer can freely browse the application and place an order when they are ready, once the order is place business user will proceed to approach the user. 
+
+This will further streamline the process as business user can look for the latest order in admin panels and answering user queries in whatsapp, where we seperated the workflow to make it clearer and more efficient.
+
+Admin panel also servers as a store item editor, where business users can perform CRUD operations on the production product store.
 
 
 
