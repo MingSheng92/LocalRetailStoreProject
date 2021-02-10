@@ -1,5 +1,4 @@
 # Move to cloud 
-Documentation on the project.
 
 # Task Deskscription
 I was tasked to propose a all around digital solution to the business owner, where the main purpose of this project is to: <br />
@@ -54,7 +53,11 @@ It offers 50k read operations and 10k write operations per day which is reasonab
 
 ### UI Libraries 
 
+As for landing page it is coded with pure CSS stylings, but I found that it is hard to keep it consistent with pure css only. 
 
+Hence in admin and store site, we implemented the UI with Material UI, where we could store the theme color so the look and feel across the board is the same, we could also extend components to create custom components to speed up development times and align with react coding standards. 
+
+Notistack is also used for admin panel and store application, this could provide better user experience on application presentation where we provide feedback to user based on application's state or user's action.
 
 ### Global state managing  
 
@@ -108,12 +111,46 @@ This will further streamline the process as business user can look for the lates
 
 Admin panel also servers as a store item editor, where business users can perform CRUD operations on the production product store.
 
+### Technical Details on the products: 
+
+Below is the rough representation on how the application works.
+
+Frontend built with react + material ui and we have redux for state management, this allows us to seperate our frontend code with business logic. We can add UI state for theme customization later if required.
+
+Webpage product loader function is created with createAsyncthunk to load data from firebase firestore with asynchronous functions, where react-router-dom for handling application routing. 
+
+In order to conserve read operation counts, autocomplete searchbar has been implemented on the storepage, where the searchbar will provide match based on the online hosted JSON file to complete the search action from user, then it will load from memory if the item has already been load to DOM else it will retrive the item information from cloud to display item informations.
+
 ![Structure](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/OnlineStoreStructure.png)
+
+As for admin panel, we do not want anyone to access the panel so we have implemented single sign on feature with firebase, so that user will need to signin in order to view the data, only authorised user may access the webpage or else a blannk page is shown.
+
+
+The application will dispatch states based on user interactions, 
+for example: <br />
+fetchProduct when user first open the application. <br />
+fetchMore when user click to load more items <br />
+addToCart when user add new items to shopping cart <br />
+getCartItems when accessing cart page <br />
+submitOrder when user place an order <br />
+
+Below is an example where user placed an order from the store application, and business user will see the order in the admin panel instantly. Then he could proceed with the order and contact the customer as before.
+
+## future work 
+We have successfullly implemented a proof of concept where we implement a set of products to drive business sales. In short, we have optimized the workflow, increase online footprint of retail brand, streamlined workflow by adding new funcstions to the application.
+
+As all the basic infrastructure has been laid down, there is a few that we could do in the future.
+1. Analyse customer segmentation 
+    We could do customer segmentation based on google analytics and facebook pixels gathered inforamtion, based on this we can perform the following:
+    i . Place specific Ad for certain customer segment groups
+    ii. Analyse custormers CTR (Clicked through rate) based on A/B test results
+2. A/B test, since Netlify has integrate CI/CD, we can branch from root repository and perform live user test on UI changes.
+3. Add online payment gateway, as the business progress business will need to add payment options to the application, we could add in serverless payment option such as [Stripe](https://stripe.com/en-my) or [Snipcart](https://snipcart.com/).
 
 ### Scores
 
 ![storelighthouseScore](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/store.JPG)
 
-https://wechatwiki.com/wechat-resources/wechat-mini-program-epic-tutorial-guide/
-https://www.xiaohongshu.com/
-https://www.bilibili.com/
+https://wechatwiki.com/wechat-resources/wechat-mini-program-epic-tutorial-guide/ <br />
+https://www.xiaohongshu.com/ <br />
+https://www.bilibili.com/ <br />
