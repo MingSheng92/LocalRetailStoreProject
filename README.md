@@ -78,6 +78,8 @@ With all the basic information listed, we will now proceed to the final product 
 ### Landing page/Official webpage
 
 #### https://www.mymringredient.com/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9afe8b4a-b45a-499d-8196-d1b1b7d384cb/deploy-status)](https://app.netlify.com/sites/sad-perlman-0afef9/deploys)
+
 This is a basic brand homepage where user can reach from different refferal points such as facebook, google cards and also google search. 
 
 The landing page is fully set up with google SEO and it is rich result enabled website, where you get card like information when display in google search. 
@@ -95,7 +97,10 @@ The site is also google analytic and facebook pixel enabled for better advertisi
 
 images is also load with lazy functions to further optimize the website.
 
-#### https://store.mymringredient.com/ and admin panel 
+### Store page and admin panel 
+
+#### https://store.mymringredient.com/ :
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e83ab672-ef1c-4491-817c-d818c367c9e0/deploy-status)](https://app.netlify.com/sites/admiring-pasteur-7c667a/deploys)
 
 Admin panel will be shown only in image form as there is security concerns, so it is best to leave it out of this documentation.
 
