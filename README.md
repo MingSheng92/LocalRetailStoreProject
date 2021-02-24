@@ -19,6 +19,7 @@ Netlify has built in CI/CD, meaning that build and deploy is automated with Netl
 ### fontend framework 
 
 According to google analytics, 80% of the users is from Malaysia, next would be Singapore. 
+
 ![GoogleGeoAnalytics](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/googleAnalyticsMap.JPG)
 
 Next up, customer mainly consist of mobile users, when we look further into mobile sections, we find almost even split in both Apple and Andriod phones, that means that if we want to match our goal and fufil our customer base we need the below criteria:
