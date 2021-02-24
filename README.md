@@ -19,17 +19,16 @@ Netlify has built in CI/CD, meaning that build and deploy is automated with Netl
 ### fontend framework 
 
 According to google analytics, 80% of the users is from Malaysia, next would be Singapore. 
+![GoogleGeoAnalytics](https://github.com/MingSheng92/LocalRetailStoreProject/blob/main/proj_images/googleAnalyticsMap.JPG)
 
-Next up, customer mainly consist of mobile users as shown in the graph below:
-
-But when we look further into mobile sections, we find almost even split in both Apple and Andriod phones, that means that if we want to match our goal and fufil our customer base we need the below criteria:
+Next up, customer mainly consist of mobile users, when we look further into mobile sections, we find almost even split in both Apple and Andriod phones, that means that if we want to match our goal and fufil our customer base we need the below criteria:
 1. A framework that can work with both Apple and Andriod (native app is out of scope since there will be the need the effort for continuous support and managing the app)
 2. Web like feature that can be hosted on the internet where customer can have their exposure through web ranking (SEO)
 3. fufil customer's requirements;
     i. moving member registration step into the clouds
     ii. create an online store like application for the customer
 
-In early 2020, when tallking to a freidn in China they mentioned that they have wechat mini program where you can have an app like program without downloading and managing it. After having some research, this is an almost perfect match with what we want to do and I began to search for an alternatives.
+In early 2020, when tallking to a friend in China they mentioned that they have wechat mini program where you can have an app like program without downloading and managing it. After having some research, this is an almost perfect match with what we want to do and I began to search for an alternatives.
 
 ##### Why not just go with Wechat mini program? 
 According to this [article](https://wechatwiki.com/wechat-resources/wechat-mini-program-epic-tutorial-guide/) Wechat mini program is widely used in China, such as [xiaohongshu](https://www.xiaohongshu.com/), [bilibili](https://www.bilibili.com/) and so on. But we have to think about our geographic location and our user base.Even though Wechat is already widely used in South East Asia, but it is popular within the chinese community but not so much for the others, and mini programs is not widely used in this region as compared to traditional websites and applications.
@@ -75,7 +74,7 @@ With all the basic information listed, we will now proceed to the final product 
 
 3 diffierent web applications were proposed to the business users, whereas the 3 products are all PWA enabled products.
 
-### Landing page/Official webpage
+# Landing page/Official webpage
 
 #### https://www.mymringredient.com/
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9afe8b4a-b45a-499d-8196-d1b1b7d384cb/deploy-status)](https://app.netlify.com/sites/sad-perlman-0afef9/deploys)
@@ -97,9 +96,9 @@ The site is also google analytic and facebook pixel enabled for better advertisi
 
 images is also load with lazy functions to further optimize the website.
 
-### Store page and admin panel 
+# Store page and admin panel 
 
-#### https://store.mymringredient.com/ :
+#### https://store.mymringredient.com/ 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e83ab672-ef1c-4491-817c-d818c367c9e0/deploy-status)](https://app.netlify.com/sites/admiring-pasteur-7c667a/deploys)
 
 Admin panel will be shown only in image form as there is security concerns, so it is best to leave it out of this documentation.
